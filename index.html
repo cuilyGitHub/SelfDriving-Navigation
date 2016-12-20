@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>行驶轨迹</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/index.js"></script>
+    <!--timeClntrol-->
+    <script src="assets/js/TimeControl/jquery-1.9.1.js"></script>
+    <script src="assets/js/TimeControl/date.js"></script>
+    <script src="assets/js/TimeControl/iscroll.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#beginTime').date();
+        });
+    </script>
+</head>
+<body>
+    <!--日期搜索框-->
+    <div class="search">
+        <div id="beginTime" class="input-box"></div>
+    </div>
+    <div class="search hide">
+        <div class="input-box"></div>
+    </div>
+    <!--结果显示面板-->
+    <div class="message-panel">
+        <div class="content">
+            <div class="row">
+                <span>2016-12-14</span>
+                <span>09:20:08</span>
+            </div>
+            <div class="row font">
+                <span>里程：182米</span>
+                <span>耗时00:05:23</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <span>2016-12-14</span>
+                <span>09:20:08</span>
+            </div>
+            <div class="row font">
+                <span>里程：182米</span>
+                <span>耗时00:05:23</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <span>2016-12-14</span>
+                <span>09:20:08</span>
+            </div>
+            <div class="row font">
+                <span>里程：182米</span>
+                <span>耗时00:05:23</span>
+            </div>
+        </div>
+    </div>
+    <!--无结果面板-->
+    <div class="message-panel hide">
+        <div class="no-message">当天暂无轨迹数据</div>
+    </div>
+
+
+    <!--timeControl-->
+    <div id="datePlugin"></div>
+</body>
+</html>
